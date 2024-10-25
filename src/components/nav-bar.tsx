@@ -27,6 +27,9 @@ function Navs() {
               <Nav.Link as={Link} className="custom-class " to={"/about"}>
                 About us
               </Nav.Link>
+              <Nav.Link as={Link} className="custom-class " to={"#"}>
+                our program
+              </Nav.Link>
               <Nav.Link as={Link} className="custom-class " to={"/contact"}>
                 Contact
               </Nav.Link>
