@@ -1,6 +1,6 @@
 import { Container, Link, Stack } from "@chakra-ui/react";
-import { BsFacebook } from "react-icons/bs";
-import { FaEnvelope } from "react-icons/fa";
+import { BsFacebook, BsTwitterX, BsLinkedin } from "react-icons/bs";
+// import { FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -10,8 +10,11 @@ const Footer = () => {
           <Link p={1} href="#">
             <BsFacebook size={40} color="white" />
           </Link>
-          <Link href="mailto:gusgayflor2001@gmail.com">
-            <FaEnvelope size={40} color="white" />
+          <Link href="#">
+            <BsTwitterX size={40} color="white" />
+          </Link>
+          <Link href="#">
+            <BsLinkedin size={40} color="white" />
           </Link>
         </Stack>
       </Container>

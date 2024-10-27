@@ -4,6 +4,18 @@
   font-weight: bold;
 }
 
+.donate-btn {
+  background-color: green;
+  color: white;
+}
+@media (min-width: 900px) {
+  .donate-btn {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px;
+  }
+}
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
