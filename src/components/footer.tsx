@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <Container>
-        <Stack direction={"row"} justifyContent={"center"} gap={5}>
+        <Stack direction={"row"} justifyContent={"center"} gap={5} pb={2}>
           <Link p={1} href="#">
             <BsFacebook size={40} color="white" />
           </Link>
