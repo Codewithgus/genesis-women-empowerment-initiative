@@ -5,19 +5,19 @@ import { BsFacebook, BsTwitterX, BsLinkedin } from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <Container>
+      <Container pt={5}>
         <Stack direction={"row"} justifyContent={"center"} gap={5} pb={2}>
           <Link p={1} href="#">
-            <BsFacebook size={40} color="white" />
+            <BsFacebook size={40} />
           </Link>
           <Link href="#">
-            <BsTwitterX size={40} color="white" />
+            <BsTwitterX size={40} />
           </Link>
           <Link href="#">
-            <BsLinkedin size={40} color="white" />
+            <BsLinkedin size={40} />
           </Link>
         </Stack>
-        <Stack direction={"row"} justifyContent={"center"}>
+        <Stack direction={"row"} justifyContent={"center"} mb={2}>
           call us <Link href="tel:+1 952-210-1536"> +1 952-210-1536</Link>
         </Stack>
       </Container>

@@ -1,4 +1,4 @@
-import { Flex, List } from "@chakra-ui/react";
+import { Box, Flex, List } from "@chakra-ui/react";
 import Team from "./team-members";
 import Footer from "./footer";
 import Boxcontainer from "./custom-component/box-container";
@@ -18,7 +18,9 @@ const About = () => {
         p={10}
       >
         <Boxcontainer>
-          <AboutHeading>ABOUT US</AboutHeading>
+          <Box bg={"blue.300"} p={4} mb={4}>
+            <AboutHeading>ABOUT US</AboutHeading>
+          </Box>
           <AboutText>
             Genesis women empowerment initiative(GWEI) is a beacon of new life
             situated in africa mainly Cameroon, Liberia, and Guinea. this
@@ -30,7 +32,10 @@ const About = () => {
           </AboutText>
         </Boxcontainer>
         <Boxcontainer>
-          <AboutHeading>core values</AboutHeading>
+          <Box bg={"blue.300"} p={4} mb={4}>
+            <AboutHeading>core values</AboutHeading>
+          </Box>
+
           <AboutText>
             {" "}
             <List.Root gap={5} variant={"plain"}>
@@ -38,7 +43,7 @@ const About = () => {
                 <List.Indicator asChild color={"blue"}>
                   <LuCheckCircle />
                 </List.Indicator>
-                INTEGRITY = having strong moral principles and being honest.
+                INTEGRITY : having strong moral principles and being honest.
                 ensuring that every decision is transparent in every aspect of
                 our work.
               </List.Item>
@@ -46,7 +51,7 @@ const About = () => {
                 <List.Indicator asChild color={"blue"}>
                   <LuCheckCircle />
                 </List.Indicator>
-                CREATIVITY = we are devoted to making every woman productive and
+                CREATIVITY : we are devoted to making every woman productive and
                 should have a sense of great idea with the level of progression
                 by being innovative.
               </List.Item>
@@ -54,7 +59,7 @@ const About = () => {
                 <List.Indicator asChild color={"blue"}>
                   <LuCheckCircle />
                 </List.Indicator>
-                RESPECT = we believe that all women should be elicited by their
+                RESPECT : we believe that all women should be elicited by their
                 abilities,qualities or achievements due to the regard for the
                 rights or traditon of others.
               </List.Item>
@@ -62,14 +67,14 @@ const About = () => {
                 <List.Indicator asChild color={"blue"}>
                   <LuCheckCircle />
                 </List.Indicator>
-                ACCOUNTABILITY = women should be responsible to justify their
+                ACCOUNTABILITY: women should be responsible to justify their
                 actions or decisions and be explicable to authority.
               </List.Item>
               <List.Item>
                 <List.Indicator asChild color={"blue"}>
                   <LuCheckCircle />
                 </List.Indicator>
-                PASSION = all women should have a strong liking or desire for
+                PASSION : all women should have a strong liking or desire for
                 some of the activities.
               </List.Item>
             </List.Root>

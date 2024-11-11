@@ -9,7 +9,7 @@ const AboutHeading = ({ children }: props) => {
   return (
     <>
       <Heading
-        textTransform={"capitalize"}
+        textTransform={"uppercase"}
         textDecoration={"underline"}
         mb={4}
         textAlign={"center"}

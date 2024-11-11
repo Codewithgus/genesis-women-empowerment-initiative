@@ -9,14 +9,13 @@ const BoxTeamMembers = ({ children }: props) => {
     <>
       <Box
         maxWidth={"sm"}
-        //   bg="green.600"
-        shadow="md"
+        shadow="lg"
         borderRadius="md"
         borderWidth="1px"
         borderColor="border.disabled"
         color="fg.disabled"
         w={"100%"}
-        //   p={5}
+        m={5}
       >
         {children}
       </Box>

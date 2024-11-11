@@ -12,7 +12,7 @@ createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Provider>
       <ColorModeProvider forcedTheme="dark">
-        <Theme appearance="dark">
+        <Theme appearance="light">
           <BrowserRouter>
             <App />
           </BrowserRouter>

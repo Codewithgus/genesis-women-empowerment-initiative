@@ -48,10 +48,22 @@ const Contact = () => {
     <>
       <Navs />
       <form onSubmit={handleSubmit}>
-        <Container fluid p={50} mb={5}>
+        <Container
+          shadow="lg"
+          borderRadius="md"
+          borderWidth="2px"
+          borderColor="border.disabled"
+          color="fg.disabled"
+          // w={"100%"}
+          // p={5}
+          fluid
+          p={50}
+          //   mb={5}
+        >
           <Fieldset.Root
           // size={"lg"}
           // maxW={"md"}
+          // bg={"lightblue"}
           >
             <Stack>
               <Fieldset.Legend
@@ -68,6 +80,8 @@ const Contact = () => {
                   required
                   mt={5}
                   p={5}
+                  borderWidth="3px"
+                  focusRingColor={"#023E8A"}
                   placeholder="Name"
                   value={formdata.name}
                   onChange={(e) =>
@@ -86,6 +100,8 @@ const Contact = () => {
                   type="text"
                   // mt={5}
                   p={5}
+                  borderWidth="3px"
+                  focusRingColor={"#023E8A"}
                   placeholder="subject"
                   value={formdata.subject}
                   onChange={(e) =>
@@ -105,6 +121,8 @@ const Contact = () => {
                   type="email"
                   // mt={5}
                   p={5}
+                  borderWidth="3px"
+                  focusRingColor={"#023E8A"}
                   placeholder="email"
                   value={formdata.email}
                   onChange={(e) =>
@@ -121,6 +139,8 @@ const Contact = () => {
               <Field label="message" mt={5}>
                 <Textarea
                   placeholder="send us body"
+                  borderWidth="3px"
+                  focusRingColor={"#023E8A"}
                   value={formdata.message}
                   onChange={(e) =>
                     setFormdata({ ...formdata, message: e.target.value })
@@ -135,6 +155,7 @@ const Contact = () => {
               <Button
                 borderRadius={5}
                 bg={"#023E8A"}
+                color={"white"}
                 // bg={"green"}
                 variant={"surface"}
                 p={5}

@@ -1,4 +1,4 @@
-import { Container, Flex, List } from "@chakra-ui/react";
+import { Box, Container, Flex, List } from "@chakra-ui/react";
 import AboutText from "./custom-component/about-us-text";
 import Boxcontainer from "./custom-component/box-container";
 import AboutHeading from "./custom-component/about-us-heading";
@@ -13,7 +13,9 @@ const Program = () => {
       <Container mb={5}>
         <Flex direction={"column"} gap={5} p={10}>
           <Boxcontainer>
-            <AboutHeading>our programs</AboutHeading>
+            <Box bg={"blue.300"} p={4} mb={4} textAlign={"center"}>
+              <AboutHeading>our programs</AboutHeading>
+            </Box>
             <AboutText>
               At genesis women empowerment initiative we have well-chosen an
               impactful and innovative programs specialized to the distintive

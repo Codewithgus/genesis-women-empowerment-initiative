@@ -1,12 +1,13 @@
 .custom-class:hover {
-  background-color: #023e8a;
-  color: white;
+  background-color: #a3cfff;
+  color: black;
   font-weight: bold;
 }
 
 .donate-btn {
-  background-color: #023e8a;
-  color: white;
+  background-color: #a3cfff;
+  color: black;
+  font-weight: bold;
 }
 @media (min-width: 900px) {
   .donate-btn {
@@ -14,6 +15,14 @@
     padding-right: 50px;
     margin-left: 20px;
   }
+}
+
+.navBar {
+  color: black;
+}
+
+.linkWeight {
+  font-weight: 500;
 }
 
 /* :root {

@@ -10,7 +10,8 @@ const BoxTeamInner = ({ children }: props) => {
     <>
       <Box
         w={"100%"}
-        bg="#023E8A"
+        bg={"blue.300"}
+        // bg="#023E8A"
         // bg="green.600"
         textAlign={"center"}
         p={5}
