@@ -1,11 +1,11 @@
 .custom-class:hover {
-  background-color: green;
+  background-color: #023e8a;
   color: white;
   font-weight: bold;
 }
 
 .donate-btn {
-  background-color: green;
+  background-color: #023e8a;
   color: white;
 }
 @media (min-width: 900px) {

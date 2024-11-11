@@ -8,7 +8,12 @@ interface props {
 const AboutHeading = ({ children }: props) => {
   return (
     <>
-      <Heading textTransform={"capitalize"} textDecoration={"underline"}>
+      <Heading
+        textTransform={"capitalize"}
+        textDecoration={"underline"}
+        mb={4}
+        textAlign={"center"}
+      >
         {children}
       </Heading>
     </>

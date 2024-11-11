@@ -5,40 +5,50 @@ const Statement = () => {
   return (
     <>
       <Flex direction={{ base: "column", lg: "row" }} gap={5} p={10}>
-        <Box bg="green" borderRadius="md">
+        <Box
+          bg="blue"
+          // bg="023E8A"
+
+          // bg="green"
+          borderRadius="md"
+        >
           <Boxcontainer>
             <Heading textTransform={"capitalize"}>mission</Heading>
             <Text fontWeight={"medium"}>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              voluptatibus assumenda, numquam non iure voluptatem commodi soluta
-              exercitationem? Excepturi fugit quod nemo repellendus! Nemo, illo?
-              Tempora facere est excepturi beatae.
+              our mission is to support women achieve their full potential and a
+              better future of widows in the absence of their husband.
             </Text>
           </Boxcontainer>
         </Box>
 
-        <Box bg="green.800" borderRadius="md">
+        <Box
+          bg={"#023E8A"}
+          //  bg="green.800"
+
+          borderRadius="md"
+        >
           <Boxcontainer>
             <Heading textTransform={"capitalize"}>vision</Heading>
             <Text fontWeight={"medium"}>
               {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              voluptatibus assumenda, numquam non iure voluptatem commodi soluta
-              exercitationem? Excepturi fugit quod nemo repellendus! Nemo, illo?
-              Tempora facere est excepturi beatae.
+              our vision is to facilitate the active involvement in
+              business,learning,community life,innovation and to enhance their
+              roles in development.
             </Text>
           </Boxcontainer>
         </Box>
-        <Box bg="green.600" borderRadius="md">
+        <Box
+          bg="blue.800"
+          // bg="green.600"
+          borderRadius="md"
+        >
           <Boxcontainer>
-            <Heading textTransform={"capitalize"}>core values</Heading>
+            <Heading textTransform={"capitalize"}>GOAL</Heading>
             <Text fontWeight={"medium"}>
-              {" "}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-              voluptatibus assumenda, numquam non iure voluptatem commodi soluta
-              exercitationem? Excepturi fugit quod nemo repellendus! Nemo, illo?
-              Tempora facere est excepturi beatae.
+              our goal is to create a future where women are not only empowered
+              but are also driving positive change in their communities and
+              beyond.
             </Text>
           </Boxcontainer>
         </Box>

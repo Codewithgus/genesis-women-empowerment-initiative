@@ -8,7 +8,14 @@ interface props {
 const BoxTeamInner = ({ children }: props) => {
   return (
     <>
-      <Box w={"100%"} bg="green.600" textAlign={"center"} p={5} mt={6}>
+      <Box
+        w={"100%"}
+        bg="#023E8A"
+        // bg="green.600"
+        textAlign={"center"}
+        p={5}
+        mt={6}
+      >
         {children}
       </Box>
     </>

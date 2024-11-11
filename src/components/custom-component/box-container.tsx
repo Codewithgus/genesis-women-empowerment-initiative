@@ -17,7 +17,7 @@ const Boxcontainer = ({ children }: props) => {
         color="fg.disabled"
         w={"100%"}
         p={5}
-        textAlign={"center"}
+        // textAlign={"center"}
       >
         {children}
       </Box>

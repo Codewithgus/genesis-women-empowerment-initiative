@@ -1,11 +1,19 @@
 import { Container, Nav, Navbar } from "react-bootstrap";
+import gweiIcon from "../assets/20241110_180909.jpg";
 
 import { Link } from "react-router-dom";
 import "../index.css";
+import { Image, Heading } from "@chakra-ui/react";
 
 function Navs() {
   return (
     <>
+      <Heading
+        fontSize={{ sm: "md", md: "lg", lg: "2xl" }}
+        textAlign={"center"}
+      >
+        GENESIS WOMEN EMPOWERMENT INITIATIVE
+      </Heading>
       <Navbar
         expand="lg"
         data-bs-theme="dark"
@@ -13,11 +21,13 @@ function Navs() {
         // bg="dark"
       >
         <Container fluid>
-          <Navbar.Brand href="#home">G.W.E.I</Navbar.Brand>
+          <Navbar.Brand href="#home">
+            <Image src={gweiIcon} w={"60px"} h={"60px"} m={0} />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="text-white">
             <Nav
-              className="mr-auto  "
+              className="mr-auto"
               variant="tabs"
               fill
               defaultActiveKey={"/home"}
@@ -28,22 +38,14 @@ function Navs() {
               <Nav.Link as={Link} className="custom-class " to={"/about"}>
                 About us
               </Nav.Link>
-              <Nav.Link as={Link} className="custom-class " to={"#"}>
+              <Nav.Link as={Link} className="custom-class " to={"/our-program"}>
                 our program
               </Nav.Link>
               <Nav.Link as={Link} className="custom-class " to={"/contact"}>
                 Contact
               </Nav.Link>
               <Nav.Link as={Link} to={"#"} className="donate-btn">
-                {/* <Button
-                  ml={{ lg: 5 }}
-                  bg={"green"}
-                  borderRadius={5}
-                  color={"white"}
-                  p={{ lg: 5 }}
-                > */}
                 Donate
-                {/* </Button> */}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

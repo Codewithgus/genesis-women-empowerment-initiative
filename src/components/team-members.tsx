@@ -24,38 +24,23 @@ const Team = () => {
 
           <BoxTeamInner>
             <BoxInnerHeading>name</BoxInnerHeading>
-            <BoxTeamText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              accusantium fuga perferendis alias nihil sed excepturi pariatur?
-              Totam provident labore ducimus libero odit, accusamus voluptas
-              sint ratione aspernatur? Numquam, fugiat.
-            </BoxTeamText>
+            <BoxTeamText>member profile goes here.</BoxTeamText>
           </BoxTeamInner>
         </BoxTeamMembers>
         <BoxTeamMembers>
           <Avatar name="pinky gayflor" left={150} top={10} size={"2xl"} />
 
           <BoxTeamInner>
-            <BoxInnerHeading>core values</BoxInnerHeading>
-            <BoxTeamText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              accusantium fuga perferendis alias nihil sed excepturi pariatur?
-              Totam provident labore ducimus libero odit, accusamus voluptas
-              sint ratione aspernatur? Numquam, fugiat.
-            </BoxTeamText>
+            <BoxInnerHeading>name</BoxInnerHeading>
+            <BoxTeamText>member profile goes here.</BoxTeamText>
           </BoxTeamInner>
         </BoxTeamMembers>
         <BoxTeamMembers>
           <Avatar name="juah gayflor" left={150} top={10} size={"2xl"} />
 
           <BoxTeamInner>
-            <BoxInnerHeading>core values</BoxInnerHeading>
-            <BoxTeamText>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-              accusantium fuga perferendis alias nihil sed excepturi pariatur?
-              Totam provident labore ducimus libero odit, accusamus voluptas
-              sint ratione aspernatur? Numquam, fugiat.
-            </BoxTeamText>
+            <BoxInnerHeading>name</BoxInnerHeading>
+            <BoxTeamText>member profile goes here.</BoxTeamText>
           </BoxTeamInner>
         </BoxTeamMembers>
       </Flex>

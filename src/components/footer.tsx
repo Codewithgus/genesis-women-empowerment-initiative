@@ -17,6 +17,9 @@ const Footer = () => {
             <BsLinkedin size={40} color="white" />
           </Link>
         </Stack>
+        <Stack direction={"row"} justifyContent={"center"}>
+          call us <Link href="tel:+1 952-210-1536"> +1 952-210-1536</Link>
+        </Stack>
       </Container>
     </>
   );

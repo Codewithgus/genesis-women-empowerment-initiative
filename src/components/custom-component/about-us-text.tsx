@@ -11,11 +11,14 @@ const AboutText = ({ children }: props) => {
     <>
       <Text
         fontWeight={"medium"}
-        width={{
-          md: "72ch",
-          lg: "100ch",
-        }}
-        lineHeight={1.7}
+        // width={{
+        //   md: "72ch",
+        //   lg: "100ch",
+        // }}
+        // width={"50ch"}
+        m={{ lg: "50px" }}
+        lineHeight={1.5}
+        wordSpacing={"2px"}
       >
         {children}
       </Text>
