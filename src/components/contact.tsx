@@ -12,6 +12,9 @@ import Navs from "./nav-bar";
 import { FormEvent, useState } from "react";
 import { Field } from "../components/ui/field";
 import axios from "axios";
+
+const apiurl = import.meta.env.VITE_APP_API_URL;
+
 const Contact = () => {
   const [formdata, setFormdata] = useState({
     name: "",
@@ -30,7 +33,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       await axios
-        .post("http://127.0.0.1:8000/mail/send/", data, {
+        .post(`${apiurl}/mail/send/`, data, {
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
