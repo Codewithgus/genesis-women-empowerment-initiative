@@ -39,9 +39,19 @@ const Contact = () => {
             Accept: "application/json",
           },
         })
-        .then((res) => console.log(res.data))
-        .catch((err) => console.log(err.message));
-      setFormdata({ ...formdata, subject: "", message: "", email: "" });
+        .then((res) => {
+          console.log(res.data), alert("details sent");
+        })
+        .catch((err) => {
+          console.log(err.message), alert("error please try again");
+        });
+      setFormdata({
+        ...formdata,
+        name: "",
+        subject: "",
+        message: "",
+        email: "",
+      });
     } catch (error) {
       console.log(error);
     }
