@@ -13,7 +13,7 @@ import { FormEvent, useState } from "react";
 import { Field } from "../components/ui/field";
 import axios from "axios";
 
-const apiurl = import.meta.env.VITE_APP_API_URL;
+const apiurl = import.meta.env.VITE_API_URL;
 
 const Contact = () => {
   const [formdata, setFormdata] = useState({
