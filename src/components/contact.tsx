@@ -24,7 +24,7 @@ const Contact = () => {
   });
 
   const data = new FormData();
-  data.append("name", formdata.name);
+  data.append("Name", formdata.name);
   data.append("subject", formdata.subject);
   data.append("message", formdata.message);
   data.append("email", formdata.email);
