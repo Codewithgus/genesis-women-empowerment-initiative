@@ -3,75 +3,22 @@ import {
   Container,
   Fieldset,
   Input,
+  Spinner,
   Stack,
   Text,
   Textarea,
 } from "@chakra-ui/react";
 import Footer from "./footer";
 import Navs from "./nav-bar";
-import { FormEvent, useState } from "react";
 import { Field } from "../components/ui/field";
-import axios from "axios";
-import { toaster } from "./ui/toaster";
-import { redirect } from "react-router-dom";
-
-const apiurl = import.meta.env.VITE_API_URL;
+import myfunction from "./custom hook/hook";
 
 const Contact = () => {
-  const [formdata, setFormdata] = useState({
-    name: "",
-    subject: "",
-    message: "",
-    email: "",
-  });
-
-  const data = new FormData();
-  data.append("name", formdata.name);
-  data.append("subject", formdata.subject);
-  data.append("message", formdata.message);
-  data.append("email", formdata.email);
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    try {
-      await axios
-        .post(`${apiurl}/mail/send/`, data, {
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-        })
-        .then((res) => {
-          console.log(res.data);
-          toaster.create({
-            description: "Data sent successfully",
-            duration: 4000,
-            type: "success",
-          });
-          redirect("/");
-        })
-        .catch((err) => {
-          console.log(err.message),
-            toaster.create({
-              description: "failed to send ",
-              duration: 4000,
-              type: "error",
-            });
-        });
-      setFormdata({
-        ...formdata,
-        name: "",
-        subject: "",
-        message: "",
-        email: "",
-      });
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
+  const { loading, handleSubmit, formdata, setFormdata, Toaster } =
+    myfunction();
   return (
     <>
+      <Toaster />
       <Navs />
       <form onSubmit={handleSubmit}>
         <Container
@@ -194,7 +141,13 @@ const Contact = () => {
                 }
                 type="submit"
               >
-                submit
+                {loading ? (
+                  <>
+                    submitting <Spinner />
+                  </>
+                ) : (
+                  "submit"
+                )}
               </Button>
             </Fieldset.Content>
           </Fieldset.Root>
