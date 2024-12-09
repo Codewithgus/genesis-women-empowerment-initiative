@@ -12,6 +12,8 @@ import Navs from "./nav-bar";
 import { FormEvent, useState } from "react";
 import { Field } from "../components/ui/field";
 import axios from "axios";
+import { toaster, Toaster } from "./ui/toaster";
+import { redirect } from "react-router-dom";
 
 const apiurl = import.meta.env.VITE_API_URL;
 
@@ -40,10 +42,21 @@ const Contact = () => {
           },
         })
         .then((res) => {
-          console.log(res.data), alert("details sent");
+          console.log(res.data);
+          toaster.create({
+            description: "Data sent successfully",
+            duration: 4000,
+            type: "success",
+          });
+          redirect("/");
         })
         .catch((err) => {
-          console.log(err.message), alert("error please try again");
+          console.log(err.message),
+            toaster.create({
+              description: "failed to send ",
+              duration: 4000,
+              type: "error",
+            });
         });
       setFormdata({
         ...formdata,
@@ -151,7 +164,7 @@ const Contact = () => {
               </Field>
               <Field label="message" mt={5}>
                 <Textarea
-                  placeholder="send us body"
+                  placeholder="send us message"
                   borderWidth="3px"
                   focusRingColor={"#023E8A"}
                   value={formdata.message}
@@ -161,7 +174,7 @@ const Contact = () => {
                 />
                 {formdata.message === "" && (
                   <Text mt={2} color={"red"}>
-                    body field is empty
+                    message field is empty
                   </Text>
                 )}
               </Field>
