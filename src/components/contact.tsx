@@ -12,7 +12,7 @@ import Navs from "./nav-bar";
 import { FormEvent, useState } from "react";
 import { Field } from "../components/ui/field";
 import axios from "axios";
-import { toaster, Toaster } from "./ui/toaster";
+import { toaster } from "./ui/toaster";
 import { redirect } from "react-router-dom";
 
 const apiurl = import.meta.env.VITE_API_URL;
